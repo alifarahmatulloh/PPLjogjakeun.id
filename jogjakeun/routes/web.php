@@ -19,3 +19,6 @@ Route::get('/', function () {
 
 Route::get('/registrasi/index','RegistrasiController@index');
 Route::post('/registrasi/store','RegistrasiController@store');
+
+Route::get('/upload', 'UploadController@upload');
+Route::post('/upload/proses', 'UploadController@proses_upload');
