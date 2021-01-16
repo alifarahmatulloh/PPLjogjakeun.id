@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/registrasi/index','RegistrasiController@index');
+Route::post('/registrasi/store','RegistrasiController@store');

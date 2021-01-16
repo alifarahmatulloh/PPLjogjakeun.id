@@ -3,7 +3,9 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<form class="form-horizontal" action='' method="POST">
+<form class="form-horizontal" action='/registrasi/store' method="POST">
+  @csrf
+  
   <fieldset>
     <div id="legend">
       <legend class="">Register</legend>
@@ -13,7 +15,7 @@
       <label class="control-label"  for="username">Username</label>
       <div class="controls">
         <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-        <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+        <p class="help-block" id="help-block-username"></p>
       </div>
     </div>
  
@@ -22,7 +24,7 @@
       <label class="control-label" for="email">E-mail</label>
       <div class="controls">
         <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
-        <p class="help-block">Please provide your E-mail</p>
+        <p class="help-block" id="help-block-email"></p>
       </div>
     </div>
  
@@ -30,8 +32,8 @@
       <!-- Password-->
       <label class="control-label" for="Nomor Hp">Nomor Hp</label>
       <div class="controls">
-        <input type="number" id="no_hp" name="no_hp" placeholder="" class="input-xlarge">
-        <p class="help-block">Nomor HP harus berupa angka</p>
+        <input type="text" id="no_hp" name="no_hp" placeholder="" class="input-xlarge">
+        <p class="help-block" id="help-block-no_hp"></p>
       </div>
     </div>
  
@@ -43,3 +45,5 @@
     </div>
   </fieldset>
 </form>
+
+<script  src="{{asset('js/validate_register.js')}}"></script>
