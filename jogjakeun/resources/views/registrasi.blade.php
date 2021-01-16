@@ -14,7 +14,7 @@
       <legend class="">Register</legend>
     </div>
     <div class="control-group">
-      <!-- Username, id-nya jangan diganti-->
+      <!-- Username, id dan name-nya jangan diganti-->
       <label class="control-label"  for="username">Username</label>
       <div class="controls">
         <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
@@ -23,7 +23,7 @@
     </div>
  
     <div class="control-group">
-      <!-- E-mail, id-nya jangan diganti -->
+      <!-- E-mail, id dan name-nya jangan diganti -->
       <label class="control-label" for="email">E-mail</label>
       <div class="controls">
         <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
@@ -32,7 +32,7 @@
     </div>
  
     <div class="control-group">
-      <!-- Password, id-nya jangan diganti-->
+      <!-- Password, id dan name-nya jangan diganti-->
       <label class="control-label" for="Nomor Hp">Nomor Hp</label>
       <div class="controls">
         <input type="text" id="no_hp" name="no_hp" placeholder="" class="input-xlarge">
