@@ -153,8 +153,8 @@ span{
 <body style="background-color: #34363D;">
 
 <input type="radio" name="photos" id="check1" checked>
-<input type="radio" name="photos" id="check2">
-<input type="radio" name="photos" id="check3">
+<input type="radio" name="photos" value="photo" id="check2">
+<input type="radio" name="photos" value="video" id="check3">
 <input type="radio" name="photos" id="check4">
 
 <div class="container">
@@ -162,14 +162,14 @@ span{
   <div class="top-content">
     <h3>Photo & Video</h3>
     <label for="check1">Semua</label>
-    <label for="check2">Photo</label>
-    <label for="check3">Video</label>
+    <label for="check2" dusk="photo-button">Photo</label>
+    <label for="check3" dusk="video-button">Video</label>
   </div>
     
    <div class="photo-gallery">
      <div class="pic photo">
-       <img src="/img/photo1.png">
-       <button onclick="Gas()" type="button" class="like" > like</button> <span id="bisa">0</span>
+       <img src="/img/photo1.png" dusk="photo_img">
+       <button onclick="Gas()" type="button" class="like" name="btn_1"> like</button> <span id="bisa">0</span>
       <h1><span id="overhere"></span></h1>
     <script type="text/javascript">
         function ok(){
@@ -186,7 +186,7 @@ span{
 
 
      <div class="pic video">
-       <img src="/img/video1.png">
+       <img src="/img/video1.png" dusk="video_img">
        <button onclick="Gas1()" type="button" class="like" > like</button> <span id="bisa1">0</span>
       <h1><span id="overhere"></span></h1>
     <script type="text/javascript">
